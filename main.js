@@ -1,6 +1,6 @@
-const env = require('env');
+const env = require('dotenv');
 const fs = require('node:fs');
-const { Client, Intents } = require('discord.js');
+const { Client, Intents, Collection } = require('discord.js');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS]});
 
@@ -31,4 +31,4 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.login
+client.login();
