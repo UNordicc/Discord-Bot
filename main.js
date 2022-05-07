@@ -1,4 +1,4 @@
-const env = require('dotenv');
+require('dotenv').config();
 const fs = require('node:fs');
 const { Client, Intents, Collection } = require('discord.js');
 
@@ -31,4 +31,4 @@ client.on('interactionCreate', async interaction => {
 	}
 });
 
-client.login();
+client.login(process.env.TOKEN);
