@@ -5,6 +5,7 @@ module.exports = {
 		.setName('commands')
 		.setDescription('Give entire list of commands'),
 	async execute(interaction) {
-        
+        const user = interaction.options.getUser('target');
+		return interaction.reply({  });
 	},
 };
